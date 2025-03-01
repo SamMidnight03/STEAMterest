@@ -13,6 +13,11 @@
   --BlancoRojiso: #F4E3E3;
 }
 
+body{
+  height: 100vh;
+  width: 100%;
+}
+
 /*Header*/
 
 header {
@@ -91,8 +96,8 @@ nav {
 /*Carta el elemento*/
 
 #Carta {
-  width: 350px;
-  height: 400px;
+  max-width: 350px;
+  max-height: 400px;
   overflow: hidden;
   border-radius: 12px;
   display: flex;
@@ -177,7 +182,7 @@ main{
 
 .Input input{
   background-color: var(--BlancoRojiso);
-  width: 400px;
+  max-width: 400px;
   height: 37px;
   border-radius: 16px;
   padding: 14px 16px;
@@ -227,10 +232,10 @@ main{
 
 /*Responsive*/
 
-@media screen and (max-width: 379px;) {
+@media screen and (max-width: 379px) {
   header{
-    height: 118px;
+    height: 120px;
     justify-content: center;
-    background-color: #972525;
+    gap: 5px;
   }
 }
