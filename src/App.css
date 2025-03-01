@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", serif;
+}
+
+:root {
+  --rojo: #CA3737;
+  --RojoOscuro: #972525;
+  --BlancoRojiso: #F4E3E3;
+}
+
+/*Header*/
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 24px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+/*Botones del header*/
+nav {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 26px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.Botones {
+  display: flex;
+  gap: 10px;
+}
+
+.Explorar {
+  width: 87px;
+  height: 37px;
+  color: var(--rojo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  width: 71px;
+  height: 37px;
+  background-color: var(--rojo);
+  color: #ffffff;
+}
+
+.Registro {
+  width: 85px;
+  height: 37px;
+  background-color: var(--BlancoRojiso);
+  color: #000000;
+}
+
+/*Hovers de los botones*/
+.Explorar:hover {
+  background-color: var(--BlancoRojiso);
+  transition: .3s ease-in-out;
+}
+
+.Login:hover {
+  background-color: var(--RojoOscuro);
+  transition: .3s ease-in-out;
+}
+
+.Registro:hover {
+  background-color: var(--rojo);
+  transition: .3s ease-in-out;
+}
+
+/*Carta el elemento*/
+
+#Carta {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen{
+  object-fit: cover;
+  height: 264px;
+  width: 100%;
+}
+
+#info {
+  background-color: var(--BlancoRojiso);
+  border-top: 5px solid var(--rojo);
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info p{
+  overflow: hidden;
+}
+
+.descripcion{
+  mask: linear-gradient(black, transparent);
+  height: 79px;
+  padding: 10px 10px 0 10px;
+}
+
+#Carta span img {
+  width: 32px;
+  height: 32px;
+}
+
+.select{
+  margin: 10px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/*Main del explorar*/
+
+main{
+  max-width: 1090px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 10px;
+}
+
+/*Caso especial de la rata*/
+
+.Carta4 img{
+  object-position: top;
+}
+
+/*Registro*/
+
+#Registro form, #InisioSesion form{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 337px;
+  max-width: 400px;
+  margin: auto;
+}
+
+#Registro .Input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 131px;
+}
+
+.Input input{
+  background-color: var(--BlancoRojiso);
+  width: 400px;
+  height: 37px;
+  border-radius: 16px;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+}
+
+.Input input::placeholder{
+  color: #000000;
+}
+
+.botonesRegitro{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btmReg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  width: 195px;
+  height: 37px;
+  text-decoration: none;
+}
+
+.login{
+  font-weight: 600px;
+}
+
+.registro{
+  background-color: var(--rojo);
+}
+
+/*Login*/
+
+#InisioSesion{
+  height: 290px;
+}
+
+#InisioSesion .Input{
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 379px;) {
+  header{
+    height: 118px;
+    justify-content: center;
+    background-color: #972525;
+  }
+}
