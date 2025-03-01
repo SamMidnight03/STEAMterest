@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route index element={<Explorar/>}></Route>
           <Route path='Registro' element={<Registro/>}></Route>
-          <Route path='In' element={<Login/>}></Route>
+          <Route path='Login' element={<Login/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
