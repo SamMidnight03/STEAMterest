@@ -12,7 +12,7 @@ export default function Login() {
                     <input placeholder="Contraseña"/>
                 </div>
                 <div className='botonesRegitro'>
-                    <Link className="btmReg Explorar login" to='LogIn'>Registro</Link>
+                    <Link className="btmReg Explorar login" to='Login'>Registro</Link>
                     <div className="btmReg  Login">Iniciar sesion</div>
                 </div>
             </form>
